@@ -1,0 +1,99 @@
+:root {
+  --color-verde1: #e4fde1;
+  --color-verde2: #8acb88;
+  --color-verde3: #648381;
+  --color-gris: #575761;
+  --color-amarillo: #ffbf46;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* HEADER */
+header {
+    width: 100%;
+    background-color: var(--color-gris);
+    height: 80px;
+    z-index: 1;
+}
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+header nav .logo {
+    width: 60px;
+}
+header nav .menuRetractil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    z-index: -1;
+    transition: all 150ms ease-in-out;
+}
+header nav .menuRetractil .navLista{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav .menuRetractil .navLista .navItem{
+    width: inherit;
+    background-color: var(--color-gris);
+    text-align: center;
+    padding: 10px 0;
+}
+header nav .menuRetractil .navLista .navItem:hover{
+    background-color: var(--color-verde3);
+}
+header nav .menuRetractil .navLista .navItem .navLink{
+    color: var(--color-verde1);
+    font-size: 1.3rem;
+}
+header nav .menuRetractil .btnMenu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-gris);
+    border: none;
+}
+header nav .menuRetractil .btnMenu i{
+    font-size: 2rem;
+    color: var(--color-verde1);
+    padding: 10px;
+}
+.esconder{
+    transform: translateY(-130px);
+}
+
+/* MAIN */
+main{
+    margin-top: 90px;
+}
+main .titulo {
+    font-size: 3rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+main .subtitulo{
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    padding: 0 20px;
+    font-size: 1.5rem;
+}
+main .texto {
+    max-width: 300px;
+    margin: auto;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 20pt;
+}

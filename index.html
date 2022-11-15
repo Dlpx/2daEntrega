@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" type="image/x-icon">
+    <title>InvitApp</title>
 </head>
+
 <body>
+    <header>
+        <nav>
+            <img class="logo" src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="logotipo">
+            <div class="menuRetractil esconder">
+                <ul class="navLista">
+                    <li class="navItem"><a class="navLink" href="#">Inicio</a></li>
+                    <li class="navItem"><a class="navLink" href="#">Invitados</a></li>
+                    <li class="navItem"><a class="navLink" href="#">Gastos</a></li>
+                </ul>
+                <button class="btnMenu" id="btnMenu">
+                    <i class="fa-regular fa-burger"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo">InvitApp</h1>
+        <b class="subtitulo">El sitio que te ayudara a organizar tus reuniones</b>
+        <p class="texto">Bienvenido a InvitApp, donde podras organizar mas facilmente tus reuniones. <br> Tendras la posibilidad de crear y modificar una lista de invitados, especificar si debe llevar algo, registrar y compartir gastos, etc. <br> Esperamos que puedas sacar provecho de sus funcionalidades. </p>
+        <section class="Invitados">
+            <h2 id="agregarInvitados">Agregar invitados</h2>
+            <form action="#">
+                <input type="text" name="nombreInvitado" id="nombreInvitado" placeholder="Nombre del Invitado">
+                <input type="text" name="lleva" id="lleva" placeholder="¿Que lleva?">
+                <input type="number" name="gasto" id="gasto" placeholder="¿Cuanto gasto?">
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+        <section class="listaInvitados">
+            <table>
+                <thead>
+                    <th>N°</th>
+                    <th>Nombre</th>
+                    <th>Lleva</th>
+                    <th>Gasto</th>
+                </thead>
+                <tbody>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/563302694c.js" crossorigin="anonymous"></script>
     
+    <!-- MI JS -->
     <script src="./script/script.js"></script>
 </body>
+
 </html>
